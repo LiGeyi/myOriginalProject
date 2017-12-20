@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<title>贡畜农牧科技有限公司</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/farmingCampaign.css" />
+		<script>
+			// 设置 viewport 的缩放系数。
+			var iScale = 1;
+			iScale = iScale / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=' + iScale + ', maximum-scale=' + iScale + ', minimum-scale=' + iScale + '" />');
+			// 设置 rem的基数
+			var num = document.documentElement.clientWidth / 10;
+			document.getElementsByTagName('html')[0].style.fontSize = num + 'px';
+		</script>
+	</head>
+	<body>
+		<!--弹出图片-->
+		<div class="mask"></div>
+		<div class="img_cur">
+			<img />
+		</div>
+		<div id="campaign">
+			<header>贡禽农牧科技有限公司</header>
+			<div class="banner">
+				<img src="img/banner.png"/>
+			</div>
+			<section class="content">
+				<div class="coProfile cblock">
+					<div class="tit"><span>公司简介</span></div>
+					<div class="inner">
+						<div class="clearfix">
+							<div class="innertxt fl">桂阳贡禽农牧科技有限公司创建于2012年底，是一个及蛋鸡养殖、淡水养殖、饲料加工、肌肉鸡肉、鸡蛋加工、科技培训及营销于一体的现代高科技企业。公司拥有固定资产3000万元，现</div>
+							<div class="innerimg fr">
+								<img class="imgC" src="img/P02.jpg" />
+							</div>
+						</div>
+						<div class="clearfix">
+							<div class="innerimg fl">
+								<img class="imgC" src="img/P01.jpg" />
+							</div>
+							<div class="innertxt fr txt2">有年产一万吨饲料加工厂一个，年出笼20万羽良种繁育基地一个，年饲养蛋鸡6万羽生产基地三个，年产鲜蛋1800万枚，年产值50000万元，公司现有职工50人，其中具有中级技术职称以上7人。</div>
+						</div>
+					</div>
+				</div>
+				<div class="mgtIdear cblock">
+					<div class="tit"><span>经营理念</span></div>
+					<div class="inner">
+						<div class="inner_des">桂阳贡禽农牧科技有限公司坚持“以工业的理念发展农业、以工程的模式发展基地、以循环的理念提升产业”，致力于农牧产业的规模化、规范化、标准化、专业化、现代化发展。秉着“诚实守信、科技创新、生态发展、循环增效”的原则，按“公司+合作社+基地”模式，实行“五统二分”管理方式发展，用心做好每一个细节，为社会提供越来越好的安全、生态、健康的食品。</div>
+						<ul class="mstImg clearfix">
+							<li>
+								<img class="imgC" src="img/P03.png" />
+								<div class="img_tit">规模化</div>
+							</li>
+							<li>
+								<img class="imgC" src="img/P04.png">
+								<div class="img_tit">规范化</div>
+							</li>
+							<li>
+								<img class="imgC" src="img/P05.png">
+								<div class="img_tit">标准化</div>
+							</li>
+							<li>
+								<img class="imgC" src="img/P06.png">
+								<div class="img_tit">专业化</div>
+							</li>
+							<li>
+								<img class="imgC" src="img/P07.png">
+								<div class="img_tit">现代化</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="baseConst cblock">
+					<div class="tit"><span>基地建设</span></div>
+					<div class="inner">
+						<div class="innerTit">一、科学规划、合理选址</div>
+						<div class="innerTips">标准化蛋鸡养殖场基地的建设严格遵循贡禽农牧科技有限公司的规划定位与统筹布局，在具体选址上严格遵循以下原则：</div>
+						<div class="innerImgTxt clearfix">
+							<div class="fl txt1">1、天然防疫原则：即场址尽量远离交通干线(最少不低于500米);远离居民生活区(最少不低于500米);远离生活水源区(水源污染率为零)。</div>
+							<div class="fr img1">
+								<img class="imgC" src="img/P08.jpg" />
+							</div>
+						</div>
+						<div class="innerImgTxt clearfix">
+							<div class="fl img1">
+								<img class="imgC" src="img/P09.jpg"/>
+							</div>
+							<div class="fr txt1 txt2">2、生态循环原则：蛋鸡养殖基地主要建在果园、茶园和水产养殖场内，使蛋鸡养殖产生的副产品—鸡粪在果园、茶园和水产养殖地就地消化，实现循环利用、综合增效的目的。</div>
+						</div>
+						<div class="innerImgTxt clearfix">
+							<div class="fl txt1 txt3">3、容量定产原则：根据当地粪肥需求量确定蛋鸡实际饲养量，确保基地粪污就地消化，并产生综合效益。</div>
+							<div class="fr img1">
+								<img class="imgC" src="img/P10.jpg" />
+							</div>
+						</div>
+						<div class="innerTit">二、科学建设、规范操作</div>
+						<div class="innerTips">根据场地实际，科学选择标准建设模块，规范模块技术流程确保实现“5122”目标：即基地建设实现“自动投料、自动喂水、自动排粪、自动温控、自动光照”5个自动化，一个月建好场地，2个月见效，2年内回收投资成本。</div>
+						<ul class="autoImg clearfix">
+							<li>
+								<img class="imgC" src="img/P11.png">
+								<div class="img_tit">自动投料</div>
+							</li>
+							<li>
+								<img class="imgC" src="img/P12.png">
+								<div class="img_tit">自动喂水</div>
+							</li>
+							<li>
+								<img class="imgC" src="img/P13.png">
+								<div class="img_tit">自动排粪</div>
+							</li>
+							<li>
+								<img class="imgC" src="img/P14.png">
+								<div class="img_tit">自动温控</div>
+							</li>
+							<li>
+								<img class="imgC" src="img/P15.png">
+								<div class="img_tit">自动光照</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dvptPlan cblock">
+					<div class="tit"><span>发展规划</span></div>
+					<div class="inner">
+						<div class="dvptPlan_des">贡禽农牧科技有限公司发展蛋鸡养殖基地34个，良种繁育基地1个，饲料厂2个，有机肥加工厂1个，蛋鸡屠宰分割厂1个，休闲生态农庄1个，沼气发电厂5座。</div>
+						<div class="img_des">
+							<div class="img_des_tit">球村良种繁育基地</div>
+							<div class="des_img clearfix">
+								<div class="fl">
+									<img class="imgC" src="img/P16.jpg" />
+								</div>
+								<div class="fr">
+									<img class="imgC" src="img/P17.jpg"/>
+								</div>
+							</div>
+							<div class="img_des_tit">谷田养殖基地</div>
+							<div class="des_img clearfix">
+								<div class="fl">
+									<img class="imgC" src="img/P18.jpg" />
+								</div>
+								<div class="fr">
+									<img class="imgC" src="img/P19.jpg" >
+								</div>
+							</div>
+							<div class="img_des_tit">上邓养殖基地</div>
+							<div class="des_img clearfix">
+								<div class="fl">
+									<img class="imgC" src="img/P20.jpg" />
+								</div>
+								<div class="fr">
+									<img class="imgC" src="img/P21.jpg" >
+								</div>
+							</div>
+							<div class="img_des_tit">银河养殖基地</div>
+							<div class="des_img clearfix">
+								<div class="fl">
+									<img class="imgC" src="img/P22.jpg" />
+								</div>
+								<div class="fr">
+									<img  class="imgC" src="img/P23.jpg" >
+								</div>
+							</div>
+							<div class="img_des_tit">玉米、大豆种植基地</div>
+							<div class="des_img clearfix">
+								<div class="fl">
+									<img class="imgC" src="img/P24.jpg" />
+								</div>
+								<div class="fr">
+									<img class="imgC" src="img/P25.jpg" >
+								</div>
+							</div>
+							<div class="img_des_tit">拟建饲料、肥料加工基地</div>
+							<div class="des_img clearfix">
+								<div class="fl">
+									<img class="imgC" src="img/P26.jpg" />
+								</div>
+								<div class="fr">
+									<img class="imgC" src="img/P27.jpg" >
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coCulture cblock">
+					<div class="tit"><span>企业文化</span></div>
+					<div class="inner">
+						<div class="sense">
+							<div class="clearfix">
+								<div class="fl">
+									<div class="sense_worth">
+										<div class="sense_tit">价值观</div>
+										<div class="sense_txt">全力为他人创造价值努力实现自我价值</div>
+									</div>
+									<div class="sense_worth">
+										<div class="sense_tit">质量观</div>
+										<div class="sense_txt">消费者的健康线就是贡禽的生命线</div>
+									</div>
+								</div>
+								<div class="fr">
+									<img src="img/企业精神.png" />
+									<div class="sense_tit1">企业精神</div>
+								</div>
+							</div>
+							<div class="sense_worth">
+								<div class="sense_tit">发展观</div>
+								<div class="sense_txt">
+									<p>立足桂阳、放眼世界</p>
+									<p>今天比昨天做的更好</p>
+									<p>让世界上越来越多的人吃上我们越来越好的产品</p>
+								</div>
+							</div>
+							<div class="sense_worth">
+								<div class="sense_tit">经营理念</div>
+								<div class="sense_txt">
+									<p>用心做好每一个细节；</p>
+									<p>以工业的理念发展农业，以工程的模式发展基地，以循环的理念提升产业；</p>
+									<p>安全为本，效益至上，发展为先；</p>
+									<p>踏踏实实做事，老老实实做人。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/farmingCampaign.js" ></script>
+	</body>
+</html>
