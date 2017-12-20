@@ -1,0 +1,206 @@
+@base_color: #008836;
+html{
+    background-color: #f8f8f8;
+    color: #333;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+     content:".";        
+     display:block;        
+     height:0;        
+     clear:both;        
+     visibility:hidden;        
+
+}
+.clearfix{zoom:1}
+.img_big{
+    position: fixed;
+    display: table;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10000;
+}
+.img_big span{
+    display:table-cell; 
+    vertical-align:middle; 
+    text-align: center;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7;
+    z-index: 10000;
+    display: none;
+}
+.get_img{
+    width: 100%;
+    z-index: 10000;
+    display: block;
+    img{
+        display: block;
+        width: 100%;
+        z-index: 10000;
+    }
+}
+#lsChicken{
+    color: #333;
+    padding-top:35/72rem;
+    background-color: #f8f8f8;
+    header{
+        font-size: 30/72rem;
+        text-align: center;
+        background-color: @base_color;
+        height:90/72rem;
+        line-height: 90/72rem;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        color: #fff;
+    }
+    .lsContent{
+        margin-top: 130/72rem;
+        background-color: #f8f8f8;
+        font-size:24/72rem;
+        .companyIntro{
+            .intro{
+                padding: 0 20/72rem;
+                text-indent:2*24/72rem;
+                .introTxtImg{
+                    img{
+                        width:40%;
+                        padding-top:7.2/72rem ;
+                        display: block;
+                        margin-left: 2%;
+                    }
+                    .introImgTxt{
+                        width: 60%;
+                    }
+                    
+                }
+                
+            }
+        }
+        .breedBase{
+            .baseIntro{
+                padding: 0 20/72rem;
+                text-indent:2*24/72rem;
+                .fourImg{
+                    width:40%;
+                    margin-left: 0.4rem;
+                    margin-top:0.1rem;
+                    shape-outside: inset(3% round 100%);
+                }
+            }
+        }
+        .goodsSale{
+            .saleIntro{
+                padding: 0 20/72rem;
+                text-indent:2*24/72rem;
+                .saleIntroImg{
+                    margin-top: 20/72rem;
+                    img{
+                        width: 23.5%;
+                        display: block;
+                    }
+                    img:not(:last-child){
+                        margin-right: 2%;
+                    }
+                }
+            }
+        }
+        .reviewLearn{
+            .learnIntro{
+               padding: 0 20/72rem;
+               text-indent:2*24/72rem; 
+               .learnIntroImg{
+                   margin-top: 20/72rem;
+                   img{
+                       display: block;
+                       border-radius: 50%;
+                       width: 25%;
+                   }
+               }
+               .learnIntroImgTop,
+               .learnIntroImgCenter,
+               .learnIntroImgBot{
+                   width: 80%;
+               }
+               .learnIntroImgCenter{
+                   margin-right: 10%;
+                   margin-top: -10/72rem;
+               }
+               .learnIntroImgBot{
+                   margin-right: 20%;
+                   margin-top: -10/72rem;
+               }
+            }
+        }
+        .cet{
+            .cetIntro{
+                
+                padding: 0 20/72rem;
+                .cetIntroTxt{
+                    text-indent:2*24/72rem;
+                }
+                .cetIntroImg{
+                    margin-top: 20/72rem;
+                    .cetIntroImgCur{
+                        margin-bottom: 20/72rem;
+                        .cetBox{
+                            width: 31.75%;
+                            .cetBoxTxt{
+                                width:100%;
+                                text-align: center;
+                            }
+                        }
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                        .cetBox:not(:last-child){
+                            margin-right:2% ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .txt{
+        text-align:justify;
+        text-justify:inter-ideograph; 
+    }
+    .innerTit{
+        font-size:28/72rem;
+        width: 160/72rem;
+        background:@base_color ;
+        height: 50/72rem;
+        line-height:50/72rem;
+        position: relative;
+        margin-bottom: 20/72rem;
+        margin-top: 50/72rem+40/72rem;
+        color: #fff;
+        img{
+            width: 50/72rem;
+            position: absolute;
+            top: -37/72rem;
+            right: 0;
+        }
+        span{
+           display: inline-block;
+           text-align: center;
+           width: 160/72rem;
+        }
+    }
+}

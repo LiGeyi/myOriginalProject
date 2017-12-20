@@ -1,0 +1,296 @@
+@base_color: #008836;
+html{
+    background-color: #f6f6f6;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+     content:".";        
+     display:block;        
+     height:0;        
+     clear:both;        
+     visibility:hidden;        
+
+}
+.clearfix{zoom:1}
+.img_big{
+    position: fixed;
+    display: table;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10000;
+}
+.img_big span{
+    display:table-cell; 
+    vertical-align:middle; 
+    text-align: center;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7;
+    z-index: 10000;
+    display: none;
+}
+.get_img{
+    width: 100%;
+    z-index: 10000;
+    display: block;
+    img{
+        display: block;
+        width: 100%;
+        z-index: 10000;
+    }
+}
+#campaign{
+    background-color: #f6f6f6;
+    header{
+        font-size: 32/72rem;
+        text-align: center;
+        background-color: @base_color;
+        color: #fff;
+        height: 90/72rem;
+        line-height: 90/72rem;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+    }
+    .banner{
+        margin-top: 90/72rem;
+        width: 100%;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .content{
+        font-size: 30/72rem;
+        padding-top:50/72rem;
+        .cblock{
+            margin-bottom: 50/72rem;
+            .inner{
+                font-size: 24/72rem;
+                padding: 0 30/72rem;
+                margin-top: 24/72rem;
+            }
+        }
+        .tit{
+            font-size:30/72rem;
+            background-image: url(../img/lanmubg.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 3rem;
+            height: 3/3.625rem;
+            color: #fff;
+            line-height: 3/3.625rem;
+            span{
+               display: inline-block;
+               width: 3rem-0.4137931035rem; 
+               text-align: center;
+               Letter-spacing:1/72rem;
+            }
+        }
+        .coProfile{
+            .inner{
+                font-size: 24/72rem;
+                padding: 0 30/72rem;
+                margin-top: 24/72rem;
+                .clearfix{
+                    height: 3.15rem;
+                }
+                .innertxt{
+                    width:49.2%;
+                    text-indent:2*24/72rem+5/72rem;
+                    line-height: 30/72rem;
+                    padding:6/72rem 0 ;
+                    word-break:break-all;
+                    white-space:normal;
+                    Letter-spacing:1/72rem;
+                    text-align:justify;
+                    padding: 6/72rem 0;
+                }
+                .txt2{
+                    text-indent:0;
+                }
+                .fl{
+                    margin-right: 1.6%;
+                }
+                .innerimg{
+                    width: 49.2%;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+        
+        .mgtIdear{
+            .inner{
+                text-indent:2*24/72rem+2/72rem;
+                text-align:justify;
+                .inner_des{
+                    letter-spacing: 1/72rem;
+                    text-align:justify;
+                }
+                .mstImg{
+                    margin-top: 24/72rem;
+                    li{
+                        float: left;
+                        width: 18%;
+                        img{
+                            width: 100%;
+                            display: block;
+                            margin-bottom: 10/72rem;
+                        }
+                        .img_tit{
+                            text-align: center;
+                            text-indent:0;
+                            width: 100%;
+                            letter-spacing: 1/72rem;
+                        }
+                    }
+                    li:not(:last-child){
+                       margin-right: 2.5%;  
+                    }
+                }
+            }
+        }
+        .baseConst{
+            .innerTit{
+                font-size: 28/72rem;
+                margin-bottom: 10/72rem;
+                letter-spacing: 1/72rem;
+            }
+            .innerTips{
+                text-indent:2*24/72rem+2/72rem;
+                Letter-spacing:1/72rem;
+                text-align:justify;
+                margin-bottom: 10/72rem;
+            }
+            .innerImgTxt{
+                margin-bottom: 24/72rem;
+                .fl{
+                    margin-right: 2%;
+                }
+                .txt1{
+                    text-indent:2*24/72rem+2/72rem;
+                    width: 59%;
+                    letter-spacing: 1/72rem;
+                    text-align:justify;
+                }
+                .txt2{
+                    padding:0 ;
+                    margin-top: -0.15rem;
+                }
+                .img1{
+                    width: 39%;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                .txt3{
+                    padding: 0.14rem 0;
+                }
+            }
+            .autoImg{
+                margin-top: 24/72rem;
+                li{
+                    float: left;
+                    width: 24%;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                    .img_tit{
+                        letter-spacing: 1/72rem;
+                        text-align: center;
+                    }
+                }
+                li:not(:first-child){
+                   margin-left:-5%;  
+                }
+            }
+        }
+        .dvptPlan{
+            .dvptPlan_des{
+                letter-spacing: 1/72rem;
+                text-indent:2*24/72rem+2/72rem;
+                text-align:justify;
+            }
+            .img_des{
+                .img_des_tit{
+                    letter-spacing: 1/72rem;
+                    font-size: 28/72rem;
+                    text-align: center;
+                    margin-bottom: 10/72rem;
+                    margin-top: 30/72rem;
+                }
+                .fl,.fr{
+                    width: 49.2%;
+                }
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .coCulture{
+            .sense{
+                .sense_txt{
+                    letter-spacing: 1/72rem;
+                    line-height: 0.6rem;
+                }
+                .sense_tit{
+                    letter-spacing: 1/72rem;
+                    font-size: 28/72rem;
+                    background: #fff;
+                    width: 6*28/72rem;
+                    text-align: center;
+                    padding:8/72rem 0 ;
+                    border-radius: 2rem;
+                    margin-bottom: 14/72rem;
+                }
+                .fl{
+                    width: 58.1%;
+                }
+                .fr{
+                    width: 40%;
+                    position: relative;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                    .sense_tit1{
+                        position: absolute;
+                        font-size: 28/72rem;
+                        background: #fff;
+                        width: 6*28/72rem;
+                        text-align: center;
+                        padding:8/72rem 0 ;
+                        border-radius: 2rem;
+                        top: 50%;
+                        margin-top: -22/72rem;
+                        left: -0.5rem;
+                        z-index: 1;
+                    }
+                }
+                .sense_worth{
+                    margin-bottom: 28/72rem;
+                }
+            }
+        }
+    }
+}

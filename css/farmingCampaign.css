@@ -1,0 +1,281 @@
+html {
+  background-color: #f6f6f6;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.img_big {
+  position: fixed;
+  display: table;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10000;
+}
+.img_big span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.7;
+  z-index: 10000;
+  display: none;
+}
+.get_img {
+  width: 100%;
+  z-index: 10000;
+  display: block;
+}
+.get_img img {
+  display: block;
+  width: 100%;
+  z-index: 10000;
+}
+#campaign {
+  background-color: #f6f6f6;
+}
+#campaign header {
+  font-size: 0.44444444rem;
+  text-align: center;
+  background-color: #008836;
+  color: #fff;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+#campaign .banner {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+#campaign .banner img {
+  width: 100%;
+  display: block;
+}
+#campaign .content {
+  font-size: 0.41666667rem;
+  padding-top: 0.69444444rem;
+}
+#campaign .content .cblock {
+  margin-bottom: 0.69444444rem;
+}
+#campaign .content .cblock .inner {
+  font-size: 0.33333333rem;
+  padding: 0 0.41666667rem;
+  margin-top: 0.33333333rem;
+}
+#campaign .content .tit {
+  font-size: 0.41666667rem;
+  background-image: url(../img/lanmubg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 3rem;
+  height: 0.82758621rem;
+  color: #fff;
+  line-height: 0.82758621rem;
+}
+#campaign .content .tit span {
+  display: inline-block;
+  width: 2.5862069rem;
+  text-align: center;
+  Letter-spacing: 0.01388889rem;
+}
+#campaign .content .coProfile .inner {
+  font-size: 0.33333333rem;
+  padding: 0 0.41666667rem;
+  margin-top: 0.33333333rem;
+}
+#campaign .content .coProfile .inner .clearfix {
+  height: 3.15rem;
+}
+#campaign .content .coProfile .inner .innertxt {
+  width: 49.2%;
+  text-indent: 0.73611111rem;
+  line-height: 0.41666667rem;
+  word-break: break-all;
+  white-space: normal;
+  Letter-spacing: 0.01388889rem;
+  text-align: justify;
+  padding: 0.08333333rem 0;
+}
+#campaign .content .coProfile .inner .txt2 {
+  text-indent: 0;
+}
+#campaign .content .coProfile .inner .fl {
+  margin-right: 1.6%;
+}
+#campaign .content .coProfile .inner .innerimg {
+  width: 49.2%;
+}
+#campaign .content .coProfile .inner .innerimg img {
+  width: 100%;
+  display: block;
+}
+#campaign .content .mgtIdear .inner {
+  text-indent: 0.69444444rem;
+  text-align: justify;
+}
+#campaign .content .mgtIdear .inner .inner_des {
+  letter-spacing: 0.01388889rem;
+  text-align: justify;
+}
+#campaign .content .mgtIdear .inner .mstImg {
+  margin-top: 0.33333333rem;
+}
+#campaign .content .mgtIdear .inner .mstImg li {
+  float: left;
+  width: 18%;
+}
+#campaign .content .mgtIdear .inner .mstImg li img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.13888889rem;
+}
+#campaign .content .mgtIdear .inner .mstImg li .img_tit {
+  text-align: center;
+  text-indent: 0;
+  width: 100%;
+  letter-spacing: 0.01388889rem;
+}
+#campaign .content .mgtIdear .inner .mstImg li:not(:last-child) {
+  margin-right: 2.5%;
+}
+#campaign .content .baseConst .innerTit {
+  font-size: 0.38888889rem;
+  margin-bottom: 0.13888889rem;
+  letter-spacing: 0.01388889rem;
+}
+#campaign .content .baseConst .innerTips {
+  text-indent: 0.69444444rem;
+  Letter-spacing: 0.01388889rem;
+  text-align: justify;
+  margin-bottom: 0.13888889rem;
+}
+#campaign .content .baseConst .innerImgTxt {
+  margin-bottom: 0.33333333rem;
+}
+#campaign .content .baseConst .innerImgTxt .fl {
+  margin-right: 2%;
+}
+#campaign .content .baseConst .innerImgTxt .txt1 {
+  text-indent: 0.69444444rem;
+  width: 59%;
+  letter-spacing: 0.01388889rem;
+  text-align: justify;
+}
+#campaign .content .baseConst .innerImgTxt .txt2 {
+  padding: 0 ;
+  margin-top: -0.15rem;
+}
+#campaign .content .baseConst .innerImgTxt .img1 {
+  width: 39%;
+}
+#campaign .content .baseConst .innerImgTxt .img1 img {
+  width: 100%;
+  display: block;
+}
+#campaign .content .baseConst .innerImgTxt .txt3 {
+  padding: 0.14rem 0;
+}
+#campaign .content .baseConst .autoImg {
+  margin-top: 0.33333333rem;
+}
+#campaign .content .baseConst .autoImg li {
+  float: left;
+  width: 24%;
+}
+#campaign .content .baseConst .autoImg li img {
+  width: 100%;
+  display: block;
+}
+#campaign .content .baseConst .autoImg li .img_tit {
+  letter-spacing: 0.01388889rem;
+  text-align: center;
+}
+#campaign .content .baseConst .autoImg li:not(:first-child) {
+  margin-left: -5%;
+}
+#campaign .content .dvptPlan .dvptPlan_des {
+  letter-spacing: 0.01388889rem;
+  text-indent: 0.69444444rem;
+  text-align: justify;
+}
+#campaign .content .dvptPlan .img_des .img_des_tit {
+  letter-spacing: 0.01388889rem;
+  font-size: 0.38888889rem;
+  text-align: center;
+  margin-bottom: 0.13888889rem;
+  margin-top: 0.41666667rem;
+}
+#campaign .content .dvptPlan .img_des .fl,
+#campaign .content .dvptPlan .img_des .fr {
+  width: 49.2%;
+}
+#campaign .content .dvptPlan .img_des img {
+  display: block;
+  width: 100%;
+}
+#campaign .content .coCulture .sense .sense_txt {
+  letter-spacing: 0.01388889rem;
+  line-height: 0.6rem;
+}
+#campaign .content .coCulture .sense .sense_tit {
+  letter-spacing: 0.01388889rem;
+  font-size: 0.38888889rem;
+  background: #fff;
+  width: 2.33333333rem;
+  text-align: center;
+  padding: 0.11111111rem 0;
+  border-radius: 2rem;
+  margin-bottom: 0.19444444rem;
+}
+#campaign .content .coCulture .sense .fl {
+  width: 58.1%;
+}
+#campaign .content .coCulture .sense .fr {
+  width: 40%;
+  position: relative;
+}
+#campaign .content .coCulture .sense .fr img {
+  display: block;
+  width: 100%;
+}
+#campaign .content .coCulture .sense .fr .sense_tit1 {
+  position: absolute;
+  font-size: 0.38888889rem;
+  background: #fff;
+  width: 2.33333333rem;
+  text-align: center;
+  padding: 0.11111111rem 0;
+  border-radius: 2rem;
+  top: 50%;
+  margin-top: -0.30555556rem;
+  left: -0.5rem;
+  z-index: 1;
+}
+#campaign .content .coCulture .sense .sense_worth {
+  margin-bottom: 0.38888889rem;
+}

@@ -1,0 +1,191 @@
+html {
+  background-color: #f8f8f8;
+  color: #333;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.img_big {
+  position: fixed;
+  display: table;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10000;
+}
+.img_big span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.7;
+  z-index: 10000;
+  display: none;
+}
+.get_img {
+  width: 100%;
+  z-index: 10000;
+  display: block;
+}
+.get_img img {
+  display: block;
+  width: 100%;
+  z-index: 10000;
+}
+#lsChicken {
+  color: #333;
+  padding-top: 0.48611111rem;
+  background-color: #f8f8f8;
+}
+#lsChicken header {
+  font-size: 0.41666667rem;
+  text-align: center;
+  background-color: #008836;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  color: #fff;
+}
+#lsChicken .lsContent {
+  margin-top: 1.80555556rem;
+  background-color: #f8f8f8;
+  font-size: 0.33333333rem;
+}
+#lsChicken .lsContent .companyIntro .intro {
+  padding: 0 0.27777778rem;
+  text-indent: 0.66666667rem;
+}
+#lsChicken .lsContent .companyIntro .intro .introTxtImg img {
+  width: 40%;
+  padding-top: 0.1rem;
+  display: block;
+  margin-left: 2%;
+}
+#lsChicken .lsContent .companyIntro .intro .introTxtImg .introImgTxt {
+  width: 60%;
+}
+#lsChicken .lsContent .breedBase .baseIntro {
+  padding: 0 0.27777778rem;
+  text-indent: 0.66666667rem;
+}
+#lsChicken .lsContent .breedBase .baseIntro .fourImg {
+  width: 40%;
+  margin-left: 0.4rem;
+  margin-top: 0.1rem;
+  shape-outside: inset(3% round 100%);
+}
+#lsChicken .lsContent .goodsSale .saleIntro {
+  padding: 0 0.27777778rem;
+  text-indent: 0.66666667rem;
+}
+#lsChicken .lsContent .goodsSale .saleIntro .saleIntroImg {
+  margin-top: 0.27777778rem;
+}
+#lsChicken .lsContent .goodsSale .saleIntro .saleIntroImg img {
+  width: 23.5%;
+  display: block;
+}
+#lsChicken .lsContent .goodsSale .saleIntro .saleIntroImg img:not(:last-child) {
+  margin-right: 2%;
+}
+#lsChicken .lsContent .reviewLearn .learnIntro {
+  padding: 0 0.27777778rem;
+  text-indent: 0.66666667rem;
+}
+#lsChicken .lsContent .reviewLearn .learnIntro .learnIntroImg {
+  margin-top: 0.27777778rem;
+}
+#lsChicken .lsContent .reviewLearn .learnIntro .learnIntroImg img {
+  display: block;
+  border-radius: 50%;
+  width: 25%;
+}
+#lsChicken .lsContent .reviewLearn .learnIntro .learnIntroImgTop,
+#lsChicken .lsContent .reviewLearn .learnIntro .learnIntroImgCenter,
+#lsChicken .lsContent .reviewLearn .learnIntro .learnIntroImgBot {
+  width: 80%;
+}
+#lsChicken .lsContent .reviewLearn .learnIntro .learnIntroImgCenter {
+  margin-right: 10%;
+  margin-top: -0.13888889rem;
+}
+#lsChicken .lsContent .reviewLearn .learnIntro .learnIntroImgBot {
+  margin-right: 20%;
+  margin-top: -0.13888889rem;
+}
+#lsChicken .lsContent .cet .cetIntro {
+  padding: 0 0.27777778rem;
+}
+#lsChicken .lsContent .cet .cetIntro .cetIntroTxt {
+  text-indent: 0.66666667rem;
+}
+#lsChicken .lsContent .cet .cetIntro .cetIntroImg {
+  margin-top: 0.27777778rem;
+}
+#lsChicken .lsContent .cet .cetIntro .cetIntroImg .cetIntroImgCur {
+  margin-bottom: 0.27777778rem;
+}
+#lsChicken .lsContent .cet .cetIntro .cetIntroImg .cetIntroImgCur .cetBox {
+  width: 31.75%;
+}
+#lsChicken .lsContent .cet .cetIntro .cetIntroImg .cetIntroImgCur .cetBox .cetBoxTxt {
+  width: 100%;
+  text-align: center;
+}
+#lsChicken .lsContent .cet .cetIntro .cetIntroImg .cetIntroImgCur img {
+  width: 100%;
+  display: block;
+}
+#lsChicken .lsContent .cet .cetIntro .cetIntroImg .cetIntroImgCur .cetBox:not(:last-child) {
+  margin-right: 2% ;
+}
+#lsChicken .txt {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+#lsChicken .innerTit {
+  font-size: 0.38888889rem;
+  width: 2.22222222rem;
+  background: #008836;
+  height: 0.69444444rem;
+  line-height: 0.69444444rem;
+  position: relative;
+  margin-bottom: 0.27777778rem;
+  margin-top: 1.25rem;
+  color: #fff;
+}
+#lsChicken .innerTit img {
+  width: 0.69444444rem;
+  position: absolute;
+  top: -0.51388889rem;
+  right: 0;
+}
+#lsChicken .innerTit span {
+  display: inline-block;
+  text-align: center;
+  width: 2.22222222rem;
+}
