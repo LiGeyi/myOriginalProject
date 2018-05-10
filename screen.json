@@ -1,0 +1,73 @@
+[
+	{
+		"tempId": 1,
+		"tempName": "松花皮蛋加工",
+		"prcds": [
+		    {
+				"prcdId": 1,
+				"prcdName": "灰料调制"
+			}, 
+			{
+				"prcdId": 2,
+				"prcdName": "皮蛋加工"
+			}
+		]
+	}, 
+	{
+		"tempId": 2,
+		"tempName": "测试加工模版一",
+		"prcds": [
+		    {
+				"prcdId": 1,
+				"prcdName": "测试加工工序测试加工工序测试加工工序测试加工工序一"
+			}, 
+			{
+				"prcdId": 2,
+				"prcdName": "测试加工工序二"
+			}, 
+			{
+				"prcdId": 2,
+				"prcdName": "测试加工工序三"
+			}
+		]
+	}, 
+	{
+		"tempId": 3,
+		"tempName": "测试加工模版二",
+		"prcds": [
+		    {
+				"prcdId": 1,
+				"prcdName": "测试加工工序一"
+			}, 
+			{
+				"prcdId": 2,
+				"prcdName": "测试加工工序二"
+			}
+		]
+	}, 
+	{
+		"tempId": 4,
+		"tempName": "测试加工模版三",
+		"prcds": [
+		    {
+				"prcdId": 1,
+				"prcdName": "测试加工工序一"
+			}, 
+			{
+				"prcdId": 2,
+				"prcdName": "测试加工工序二"
+			}, 
+			{
+				"prcdId": 3,
+				"prcdName": "测试加工工序三"
+			}
+		]
+	}, 
+	{
+		"tempId": 5,
+		"tempName": "测试加工模版四",
+		"prcds": [
+		    
+		]
+	}
+]
