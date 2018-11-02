@@ -5,15 +5,17 @@
 		<title></title>
 	</head>
 	<body>
-		
+		<div id="nowCode"></div>
+		<div id="tie"></div>
+		<div id="cunji"></div>
 	</body>
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
 	<script>
 		$(function(){
 			console.log("a");
 			$.ajax({
-				type: "GET",
-				url : 'https://access.video.qq.com/doki/comm_support',
+             	type: "GET",
+             	url : 'https://access.video.qq.com/doki/comm_support',
 				data : {
 					"vappid" : "70078273",
 					"vsecret" : "104bc2f8439c12fb8240669f26f2739450420294d2c68f46",
@@ -24,10 +26,40 @@
 					"iPage":"0",
 					"callback":"__jp3"
 				},
-				success : function(result) {
-					console.log("a");
-				}
-			});
+             	dataType: "text",
+             	success: function(res){
+             		var str = res;
+					var strN = str.slice(6);
+					var strF = strN.substr(0, strN.length - 2);
+					var jsonObj = JSON.parse(strF);
+					var arry = jsonObj.data.vecStarInfo;
+					console.log(jsonObj.data.vecStarInfo);
+					var wxy = 0;
+					var mmp = 0;
+					var cunji = 0;
+					for(var i =0;i<arry.length;i++){
+						if(arry[i].strStarId == "1503935"){
+							wxy = arry[i].lScore;
+							console.log(wxy)
+						}
+						if(arry[i].strStarId == "1503945"){
+							mmp = arry[i].lScore;
+						}
+						if(arry[i].strStarId == "150054"){
+							tie = arry[i].lScore;
+						}
+						if(arry[i].strStarId == "1661517"){
+							cunji = arry[i].lScore;
+						}
+					}
+					var num = wxy - mmp;
+					var tt = wxy - tie;
+					var cun = wxy - cunji;
+					$("#nowCode").html("吴宣仪  VS 批："+num);
+					$("#tie").html("吴宣仪  VS 铁："+tt);
+					$("#cunji").html("吴宣仪  VS 村主播："+cun);
+              }
+         	});
 		})
 	</script>
 </html>
