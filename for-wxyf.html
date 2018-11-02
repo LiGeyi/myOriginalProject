@@ -4,15 +4,45 @@
 		<meta charset="utf-8" />
 		<title></title>
 	</head>
+	<style>
+		body{
+			font-size: 0.6rem;
+			font-family: "微软雅黑"
+		}
+		#content{
+			width:fit-content;
+			margin: 0 auto;
+			margin-top: 300px;
+		}
+		div{
+			margin-bottom: 1rem;
+		}
+	</style>
+	<script>
+			// 设置 viewport 的缩放系数。
+			var iScale = 1;
+			iScale = iScale / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=' + iScale + ', maximum-scale=' + iScale + ', minimum-scale=' + iScale + '" />');
+			// 设置 rem的基数
+			var num = document.documentElement.clientWidth / 10;
+			document.getElementsByTagName('html')[0].style.fontSize = num + 'px';
+		</script>
 	<body>
-		<div id="nowCode"></div>
-		<div id="tie"></div>
-		<div id="cunji"></div>
+		<div id="content">
+			<div id="nowCode"></div>
+			<div id="tie"></div>
+			<div id="cunji"></div>
+		</div>
 	</body>
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
 	<script>
 		$(function(){
-			console.log("a");
+			ajaxData();
+			setInterval(function(){ 
+				ajaxData();
+			}, 10000);
+		})
+		function ajaxData(){
 			$.ajax({
              	type: "GET",
              	url : 'https://access.video.qq.com/doki/comm_support',
@@ -33,7 +63,6 @@
 					var strF = strN.substr(0, strN.length - 2);
 					var jsonObj = JSON.parse(strF);
 					var arry = jsonObj.data.vecStarInfo;
-					console.log(jsonObj.data.vecStarInfo);
 					var wxy = 0;
 					var mmp = 0;
 					var cunji = 0;
@@ -58,8 +87,8 @@
 					$("#nowCode").html("吴宣仪  VS 批："+num);
 					$("#tie").html("吴宣仪  VS 铁："+tt);
 					$("#cunji").html("吴宣仪  VS 村主播："+cun);
-              }
+              	}
          	});
-		})
+		}
 	</script>
 </html>
