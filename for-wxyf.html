@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>yyjj冲鸭</title>
+		<title>yyjjgg+ybddmm冲鸭</title>
 	</head>
 	<style>
 		body{
@@ -176,12 +176,22 @@ $.session._init();
 		$(function(){
 			ljDate();
 			ajaxData();
-			var wxyNo1 = hnTol - sum
-			$("#hn").html("海南 VS 8fw："+wxyNo1);
+			var wxyNo1 = 0;
 			setInterval(function(){ 
 				ljDate();
 				ajaxData();
-				var wxyNo1 = hnTol - sum
+				wxyNo1 = hnTol - sum;
+				var hnOld =  $.session.get('hnTol');
+				var sumOld =  $.session.get('sum');
+				if(wxyNo1<(hnOld-sumOld)){
+					$("#hn").css({
+    					"color":"#7bafd4"
+    				})
+				}else{
+					$("#hn").css({
+    					"color":"#f44336"
+    				})
+				}
 				$("#hn").html("海南 VS 8fw："+wxyNo1);
 			}, 10000);
 		})
@@ -267,6 +277,7 @@ $.session._init();
 					$.session.set('num', num);
 					$.session.set('tt', tt);
 					$.session.set('cun', cun);
+					$.session.set('hnTol', hnTol);
               	}
          	});
 		}
@@ -288,6 +299,7 @@ $.session._init();
 				},
              	dataType: "text",
              	success: function(res){
+             		sum = 0;
              		var str = res;
 					var strN = str.slice(7);
 					var strF = strN.substr(0, strN.length - 2);
@@ -296,6 +308,7 @@ $.session._init();
 					for(var i =0;i<fe.length;i++){
 						sum = sum + fe[i].lScore;
 					}
+					$.session.set('sum', sum);
               	}
          	});
 		}
