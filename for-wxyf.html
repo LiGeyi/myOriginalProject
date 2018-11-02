@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>yyjj冲鸭</title>
 	</head>
 	<style>
 		body{
@@ -32,6 +32,7 @@
 			<div id="nowCode"></div>
 			<div id="tie"></div>
 			<div id="cunji"></div>
+			<div id="hn"></div>
 		</div>
 	</body>
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
@@ -170,10 +171,18 @@ $.session._init();
 })(jQuery);
 	</script>
 	<script>
+		var sum = 0;
+		var hnTol = 0;
 		$(function(){
+			ljDate();
 			ajaxData();
+			var wxyNo1 = hnTol - sum
+			$("#hn").html("海南 VS 8fw："+wxyNo1);
 			setInterval(function(){ 
+				ljDate();
 				ajaxData();
+				var wxyNo1 = hnTol - sum
+				$("#hn").html("海南 VS 8fw："+wxyNo1);
 			}, 10000);
 		})
 		function ajaxData(){
@@ -200,6 +209,7 @@ $.session._init();
 					var wxy = 0;
 					var mmp = 0;
 					var cunji = 0;
+					var yby = 0;
 					for(var i =0;i<arry.length;i++){
 						if(arry[i].strStarId == "1503935"){
 							wxy = arry[i].lScore;
@@ -213,6 +223,9 @@ $.session._init();
 						if(arry[i].strStarId == "1661517"){
 							cunji = arry[i].lScore;
 						}
+						if(arry[i].strStarId == "1310559"){
+							yby = arry[i].lScore;
+						}
 					}
 					var num = wxy - mmp;
 					var tt = wxy - tie;
@@ -220,6 +233,7 @@ $.session._init();
 					var numOld =  $.session.get('num');
 					var ttOld =  $.session.get('tt');
 					var cunOld =  $.session.get('cun');
+					hnTol = wxy + yby ;
         			if(num>=numOld){
         				$("#nowCode").css({
         					"color":"#7bafd4"
@@ -253,6 +267,35 @@ $.session._init();
 					$.session.set('num', num);
 					$.session.set('tt', tt);
 					$.session.set('cun', cun);
+              	}
+         	});
+		}
+		function ljDate(){
+			$.ajax({
+             	type: "GET",
+             	url : 'https://access.video.qq.com/doki/comm_support',
+				data : {
+					"vappid" : "70078273",
+					"vsecret" : "104bc2f8439c12fb8240669f26f2739450420294d2c68f46",
+					"iSupportId":"101",
+					"iReqType":'1',
+					"iSupportType":"7",
+					"iNum":"9",
+					"iPage":"0",
+					"iRankType":"1",
+					"strTeam":"24",
+					"callback":"__jp19"
+				},
+             	dataType: "text",
+             	success: function(res){
+             		var str = res;
+					var strN = str.slice(7);
+					var strF = strN.substr(0, strN.length - 2);
+					var jsonObj = JSON.parse(strF);
+					var fe = jsonObj.data.vecStarInfo;
+					for(var i =0;i<fe.length;i++){
+						sum = sum + fe[i].lScore;
+					}
               	}
          	});
 		}
