@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+	<script>
+		$(function(){
+			console.log("a");
+			$.ajax({
+				url : 'https://access.video.qq.com/doki/comm_support',
+				data : {
+					"vappid" : "70078273",
+					"vsecret" : "104bc2f8439c12fb8240669f26f2739450420294d2c68f46",
+					"iSupportId":"101",
+					"iReqType":'1',
+					"iSupportType":"7",
+					"iNum":"9",
+					"iPage":"0",
+					"callback":"__jp3"
+				},
+				success : function(result) {
+					console.log("a");
+				}
+			});
+		})
+	</script>
+</html>
