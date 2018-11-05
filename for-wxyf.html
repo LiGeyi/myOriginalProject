@@ -32,7 +32,7 @@
 			<div id="nowCode"></div>
 			<div id="tie"></div>
 			<div id="cunji"></div>
-			<div id="hn"></div>
+<!-- 			<div id="hn"></div> -->
 		</div>
 	</body>
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
@@ -180,19 +180,19 @@ $.session._init();
 			setInterval(function(){ 
 				ljDate();
 				ajaxData();
-				wxyNo1 = hnTol - sum;
-				var hnOld =  $.session.get('hnTol');
-				var sumOld =  $.session.get('sum');
-				if(wxyNo1<(hnOld-sumOld)){
-					$("#hn").css({
-    					"color":"#7bafd4"
-    				})
-				}else{
-					$("#hn").css({
-    					"color":"#f44336"
-    				})
-				}
-				$("#hn").html("海南 VS 8fw："+wxyNo1);
+// 				wxyNo1 = hnTol - sum;
+// 				var hnOld =  $.session.get('hnTol');
+// 				var sumOld =  $.session.get('sum');
+// 				if(wxyNo1<(hnOld-sumOld)){
+// 					$("#hn").css({
+//     					"color":"#7bafd4"
+//     				})
+// 				}else{
+// 					$("#hn").css({
+//     					"color":"#f44336"
+//     				})
+// 				}
+// 				$("#hn").html("海南 VS 8fw："+wxyNo1);
 			}, 10000);
 		})
 		function ajaxData(){
